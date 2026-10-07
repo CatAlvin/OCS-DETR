@@ -1,0 +1,26 @@
+{
+  "epoch": 199,
+  "strict_load": true,
+  "samples": 1550,
+  "parameters": 8969258,
+  "device": "cpu",
+  "torch": "2.14.1+cpu",
+  "inference_seconds": 16.144,
+  "metrics": {
+    "MR-full-R1@0.5": 64.13,
+    "MR-full-R1@0.7": 48.06,
+    "MR-full-mAP": 43.63,
+    "MR-full-mAP@0.5": 64.57,
+    "MR-full-mAP@0.75": 43.97,
+    "MR-long-mAP": 51.55,
+    "MR-middle-mAP": 44.68,
+    "MR-short-mAP": 9.21,
+    "HL-min-Fair-mAP": 75.52,
+    "HL-min-Fair-Hit1": 75.68,
+    "HL-min-Good-mAP": 64.83,
+    "HL-min-Good-Hit1": 74.0,
+    "HL-min-VeryGood-mAP": 39.72,
+    "HL-min-VeryGood-Hit1": 63.61
+  },
+  "matching_summary_metrics": 14
+}

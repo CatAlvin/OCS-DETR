@@ -1,0 +1,10 @@
+numpy==1.26.3
+scipy==1.13.1
+pandas==1.5.3
+tqdm==4.70.1
+torch==2.14.1
+# Training classification loss also requires a torchvision build matching torch.
+scikit-learn==1.6.1
+filelock==3.20.3
+fsspec==2026.9.0
+setuptools==84.0.0

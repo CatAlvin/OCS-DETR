@@ -1,0 +1,21 @@
+{
+  "release": "v1.0.0",
+  "assets": [
+    {
+      "name": "ocs-detr-best.pt",
+      "url": "https://github.com/CatAlvin/OCS-DETR/releases/download/v1.0.0/ocs-detr-best.pt",
+      "sha256": "336aaaa2b81a761a80e4cc961d51d1e1a6013c8778f208b49a2ecbfdb9be0c26",
+      "bytes": 35946554,
+      "destination": "checkpoints/ocs-detr-best.pt",
+      "zip": false
+    },
+    {
+      "name": "ocs-detr-smoke-features.zip",
+      "url": "https://github.com/CatAlvin/OCS-DETR/releases/download/v1.0.0/ocs-detr-smoke-features.zip",
+      "sha256": "e3b17c664cdfe5ad9f898ba00655917d747a8c37091670cc9cf11b0a31ccc88a",
+      "bytes": 4612900,
+      "destination": "downloads/ocs-detr-smoke-features.zip",
+      "zip": true
+    }
+  ]
+}
