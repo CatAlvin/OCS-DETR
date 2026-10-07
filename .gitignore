@@ -28,3 +28,8 @@ outputs/
 *.ckpt
 *.pth
 *.pt
+
+# Unreviewed archives and local test caches
+*.zip
+*.7z
+*.rar
