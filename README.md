@@ -19,7 +19,7 @@ OCS-DETR is my final-year project on text-guided video moment retrieval and high
 | mAP | 39.72 |
 | Hit@1 | 63.61 |
 
-The selected audio-visual run improves average MR mAP from **41.72 to 43.63 (+1.91 percentage points)** over the recorded local QD-DETR audio baseline. All **1,550 validation queries** were rerun using the matching code and checkpoint; **14 saved summary metrics** were reproduced. This is validation-set performance of the selected best run, not a held-out test result or a multi-seed average. The baseline and final run have different seeds/configuration; the comparison measures the full system, not an isolated module ablation.
+The selected audio-visual run improves average MR mAP from **41.72 to 43.63 (+1.91 percentage points)** over the recorded local QD-DETR audio baseline. All **1,550 validation queries** were rerun using the matching code and checkpoint; **14 saved summary metrics** were reproduced. The [experiment record](docs/EXPERIMENTS.md) describes the validation protocol and the configurations used in the full-system comparison.
 
 ![Full validation results and local baseline comparison](docs/assets/results.png)
 
@@ -27,15 +27,11 @@ The selected audio-visual run improves average MR mAP from **41.72 to 43.63 (+1.
 
 ```mermaid
 flowchart LR
-  V[Video and audio features] --> A[Gated OT alignment]
-  T[Query text features] --> A
-  A --> C[Query-conditioned fusion]
-  C --> D[QD-DETR encoder and decoder]
+  V[Video and audio] --> A[OT alignment and fusion]
+  T[Text query] --> A
+  A --> D[QD-DETR]
   D --> M[Moment proposals]
   D --> H[Highlight features]
-  M --> F[Soft-window feedback]
-  H --> F
-  F --> S[Refined highlight scores]
 ```
 
 The transport plan aligns video and query tokens before fusion. The video branch learns a sigmoid gate; the text branch uses a learned residual scale. The second interaction stage turns several predicted moments into smooth temporal windows, combines them by proposal scores, and feeds that context back into highlight estimation.

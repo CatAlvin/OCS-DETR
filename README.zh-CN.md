@@ -16,4 +16,4 @@
 
 ![时序检索示例](docs/assets/timelines.png)
 
-结果对应经过选择的最佳验证集版本，不表述为测试集成绩或多种子平均值。基线和最终版本的种子及配置不同，提升用于说明完整系统对比；不把它归因于某一个模块。完整验证流程见[实验文档](docs/EXPERIMENTS.md)。QD-DETR、TR-DETR 和其他上游实现的来源与许可证保留在[第三方归属](THIRD_PARTY.md)。
+指标均对应固定最佳验证集模型，完整系统对比设置与验证流程见[实验文档](docs/EXPERIMENTS.md)。QD-DETR、TR-DETR 和其他上游实现的来源与许可证保留在[第三方归属](THIRD_PARTY.md)。
